@@ -1,0 +1,44 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "cutting links app",
+  "main": "app.js",
+  "scripts": {
+    "start": " node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackerbot1488/MERN.git"
+  },
+  "keywords": [
+    "Mongo",
+    "Express",
+    "React",
+    "Node"
+  ],
+  "author": " <artemgromov04@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackerbot1488/MERN/issues"
+  },
+  "homepage": "https://github.com/Hackerbot1488/MERN#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "chalk": "^4.1.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
